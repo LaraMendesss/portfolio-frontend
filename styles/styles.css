@@ -7,14 +7,14 @@
     --third-color:#5dacbd;
 }
 
-p{
+.index p{
     font-family: var(--default-font-family);
     font-weight: normal;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.5;
 }
 
-h2{
+.index h2{
     font-size: 64px;
     font-family: var(--heading-font-family);
    
@@ -30,7 +30,11 @@ h2{
   font-weight: bold;
   margin: 0;
   color: var(--secondary-color);
+
+  font-family: var(--default-font-family);
 }
+
+
 
 .hero h1{
     font-size: 96px;
@@ -61,6 +65,7 @@ text-decoration: none;
 
     font-size: 20px;
     color: var(--third-color);
+    font-family: var(--default-font-family);
 }
 
 .btn-projects{
@@ -76,16 +81,48 @@ text-decoration: none;
     
     }
 
-    .btn-projects:hover
+.btn-projects:hover
     {
         background-color: var(--third-color);
         color: white;
     }
 
-.description{
+.index .description{
 
    padding: 100px 60px; 
 }
+
+
+.about-section{
+    padding: 80px 60px; 
+    text-align: justify;
+}
+
+.about-section-content{
+margin: 30px;
+
+}
+
+.about-section h1{
+    font-size:64px;
+    line-height: 80px;
+    font-family: var(--heading-font-family);
+    color: var(--third-color);
+}
+
+.about-section h2{
+    font-size: 18px;
+    font-family: var(--default-font-family);
+    font-weight: bold;
+}
+
+.hi{
+    color: var(--secondary-color);
+    font-style: italic;
+    opacity: 50%;
+    font-size: 45px;
+}
+
 
 @media(max-width: 900px){
 
@@ -95,11 +132,11 @@ text-decoration: none;
 
     }
 
-    h2{
+    .hero h2{
         font-size: 44px;
 
     }
-    .description{
+    .index .description{
         padding: 0 20px;
         text-align: justify;
     }
@@ -107,4 +144,24 @@ text-decoration: none;
     .hero{
         padding: 80px 20px;
     }
+
+   
+    .about-section .row{
+        
+        padding: 0;
+        margin: 0;
+    }
+
+    .about-section p{
+        text-align: justify;
+    }
+
+    .about-section{
+        
+        padding: 0 10px;
+        margin: 0;
+        text-align: center;
+    }
+
+
 }

@@ -22,7 +22,7 @@
 .hero{
     background-color: var(--primary-color);
     text-align: center;
-    padding: 130px 20px;
+    padding: 100px 20px;
 }
 
 .hero p{
@@ -94,13 +94,13 @@ text-decoration: none;
 
 
 .content-container{
-    padding: 80px 60px; 
+    padding: 50px 12px; 
     text-align: justify;
 }
 
 .content{
 margin: 30px;
-
+font-family: var(--default-font-family);
 
 }
 
@@ -127,8 +127,9 @@ margin: 30px;
 .content h3{
 font-size: 24px;
 font-family: var(--default-font-family);
-line-height: 1.5;
+line-height: 1.2;
 font-weight: bold;
+
 }
 
 .content p .about{
@@ -137,7 +138,15 @@ font-weight: bold;
     }
 
 
+.index .social p{
+    font-size: 13px;
+}
 
+.social p{
+    font-size: 13px;
+    font-family: var(--default-font-family);
+
+}
 
 nav ul{
     padding: 0;
@@ -214,6 +223,7 @@ footer h4{
     font-size: 48px;
 }
 
+
 footer .contact-box{
  
     background: var(--primary-color);
@@ -223,11 +233,19 @@ footer .contact-box{
 }
 
 
-@media(max-width:1025px){
+footer .footer{
+    font-size: 14px;
+}
+
+@media(max-width:1030px){
 
 .index .description{
     padding: 0 20px;
  
+}
+.content{
+    margin: 0 10px;
+
 }
 }
 
@@ -261,7 +279,7 @@ footer .contact-box{
     }
 
     .hero{
-        padding: 80px 20px;
+        padding: 70px 20px;
     }
 
    
@@ -282,11 +300,19 @@ footer .contact-box{
         text-align: center;
     }
 
+    .content-container h2{
+        font-size: 20px ;
+    }
+
     .index h2{
 
         text-align: center;
         font-size: 46px;
     }
 
+    .content h1{
+        font-size: 35px;
+        line-height: 1.2;
+    }
 
 }
